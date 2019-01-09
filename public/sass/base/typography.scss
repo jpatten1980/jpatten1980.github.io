@@ -1,0 +1,43 @@
+body{
+	color: $color-black;
+	font-family: $font-sans;
+	font-size: 3rem;
+	line-height: 1.7;
+}
+
+.emphasis{
+	color: $color-emphasis;
+}
+
+.danger{
+	color: $color-danger;
+}
+
+.header{
+	font-size: 8rem;
+	letter-spacing: .75rem;
+
+	&__secondary{
+		font-size: 5.5rem;
+		letter-spacing: .25rem;
+	}
+}
+
+.link{
+	color: $color-emphasis;
+}
+
+.project{
+	&__header{
+		
+	}
+
+	&__text{
+		font-size: 2rem;
+	}
+}
+.section{
+	&__header{
+		font-size: 4rem;
+	}
+}

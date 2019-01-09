@@ -2,28 +2,80 @@
 <html>
 <head>
 	<title>Justin Patten | Web and Game Development</title>
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis:200" rel="stylesheet">
 	<link rel="stylesheet" href="public/css/index.css">
 </head>
 <body>
-	<header>
-		<section>My name.</section>
-		<section>What I do.</section>
+	<header class="header section">
+		<section class="header__main">Hey, my name's <i class="danger">Justin Patten</i>.</section>
+		<section class="header__secondary">I make games & websites.</section>
 	</header>
-	<section>
-		<p>Reason of journey.</p>
-		<p>
-			How far I've come.
-			Link to my <a href="views/projects.html">projects</a>.
-			Link to my <a href="views/resume.html">resume</a>.
+	<section id="about" class="section">
+		<h2 class="section__header">About Me</h2>
+		<p class="section__text">I've always been a dreamer and self-learner.</p>
+		<p class="section__text">
+			Four years ago I started coding. 
+			Link to my <a href="#projects" class="link">projects</a>.
+			Link to my <a href="#resume" class="link">resume</a>.
 		</p>
-		<p>
+		<p class="section__text">
 			How far I want to go.
-			Link to my <a href="#">mockups</a>.
-			<small>Mockup link is not working.</small>
+			Link to my <a href="#" class="link">mockups</a>.<br>
+			<sub>(Mockup link is not working.)</sub>
 		</p>
 	</section>
-	<footer>
+	<hr>
+	<section id="projects" class="section">
+		<h2 class="section__header">Projects</h2>
+		<ul class="project">
+			<li>
+				<h3 class="project__header">Ping</h3>
+				<ul class="project__tech">
+					<li>Unity3d</li>
+					<li>C#</li>
+				</ul>
+				<p class="project__text">
+					A personal project to see how far I could get in creating my first software.
+				</p>
+				<p class="project__text">
+					Designed as I coded the game. Big mistake.
+				</p>
+				<a href="#">Project Link</a>
+				<img src="" alt="Project Image">
+			</li>
+			<hr>
+			<li>
+				<h3 class="project__header">Parade</h3>
+				<ul class="project__tech">
+					<li>Sass</li>
+					<li>Node</li>
+					<li>Express</li>
+					<li>Mongo</li>
+					<li>Heroku</li>
+				</ul>
+				<p class="project__text">
+					Create your own holiday lights routes.
+				</p>
+				<p class="project__text">
+					Project regrets.
+				</p>
+				<a href="#">Project Link</a>
+				<img src="" alt="Project Image">
+			</li>
+		</ul>
+	</section>
+	<hr>
+	<section id="resume" class="about resume section">
+		<h2>Experience</h2>
+		<ul>
+			<li>Contact(Hidden when @media != print)</li>
+			<li>Skills</li>
+			<li>Experience</li>
+			<li>Education</li>
+		</ul>
+	</section>
+	<hr>
+	<footer class="section">
 		<ul>
 			<li>jpatten1980@yahoo.com</li>
 			<li>303.250.6192</li>

@@ -1,7 +1,3 @@
-.section{
-	padding: 5rem 3rem;
-}
-
 .bg--gold{
 	background-color: $color-gold;
 }
@@ -14,6 +10,25 @@
 	list-style-type: none;
 
 	&__tech{
+		background-image: linear-gradient(to right,$color-gray, $color-white);
+		border-radius: 5rem 0 0 5rem;
 
+		& > li{
+			display: inline;
+			list-style-type: none;
+			margin: 2rem;
+		}
 	}
+}
+
+.to-do{
+	margin-left: 3rem;
+
+	& > li{
+		padding-left: 2rem;
+	}
+}
+
+.section{
+	padding: 5rem 3rem;
 }

@@ -1,72 +1,85 @@
 <!DOCTYPE html>
-<html>
 <head>
 	<title>Justin Patten | Web and Game Development</title>
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis:200" rel="stylesheet">
-	<link rel="stylesheet" href="public/css/index.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis:200" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/index.css"> -->
 </head>
 <body>
-	<header class="header section">
-		<section class="header__main">Hey, my name's <i class="danger">Justin Patten</i>.</section>
-		<section class="header__secondary">I make games & websites.</section>
+	<header id="header" class="section">
+		<section class="header__intro">Hello, my name's <i>Justin Patten</i>.</section>
+		<section class="header__statement">I make games & websites.</section>
 	</header>
 	<section id="about" class="section">
-		<h2 class="section__header">About Me</h2>
-		<p class="section__text">I've always been a dreamer and self-learner.</p>
+		<!-- <h2 class="section__header">About Me</h2> -->
+		<p class="section__text">For four years I've been using online tutorials to learn how to program. I'm comfortable in vanilla front-end, Bootstrap, Sass, mongo, APIs, and C#. I learn quickly, code cleanly and love to problem solve. When I'm not working as a pharmacy tech, I'm improving my code.</p>
+		<hr>
 		<p class="section__text">
-			Four years ago I started coding. 
-			Link to my <a href="#projects" class="link">projects</a>.
-			Link to my <a href="#resume" class="link">resume</a>.
-		</p>
-		<p class="section__text">
-			How far I want to go.
-			Link to my <a href="#" class="link">mockups</a>.<br>
-			<sub>(Mockup link is not working.)</sub>
+			Completed online courses:
+			<ol class="to-do">
+				<li class="to-do__item">
+					Colt Steele's <cite>Web Developer Bootcamp</cite> (Udemy)
+					<ul class="to-do__item__tech">
+						<li>Vanilla frontend</li>
+						<li>Node and npm</li>
+						<li>Express</li>
+						<li>Authentication w/Passport</li>
+						<li>Mongo</li>
+						<li>git</li>
+						<li>REST</li>
+					</ul>
+				</li>
+				<li class="to-do__item">
+					<cite>Responsive Web Design Certification</cite> (FreeCodeCamp)
+				</li>
+				<li class="to-do__item">
+					Jonas Schmedtmann's <cite>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</cite> (Udemy)
+					<ul class="to-do__item__tech">
+						<li>Sass</li>
+						<li>BEM</li>
+						<li>CSS architecture</li>
+						<li>Responsive design</li>
+					</ul>
+				</li>
+			</ol>
 		</p>
 	</section>
 	<hr>
 	<section id="projects" class="section">
-		<h2 class="section__header">Projects</h2>
-		<ul class="project">
-			<li>
-				<h3 class="project__header">Ping</h3>
-				<ul class="project__tech">
+		<!-- <h2 class="section__header">Projects</h2> -->
+		<ul class="projects">
+			<li class="projects__item">
+				<h3 class="projects__item__header">Ping</h3>
+				<ul class="projects__item__tech">
 					<li>Unity3d</li>
 					<li>C#</li>
 				</ul>
-				<p class="project__text">
-					A personal project to see how far I could get in creating my first software.
+				<figure class="projects__item__images"><img src="" alt="project image"><figcaption>A game about color and popping dots.</figcaption></figure>
+				<button>Go to project</button>
+				<p class="projects__item__text">
+					A game made with Unity3d. I used C# and 3rd party plugins to create it. I learned how little I knew about UX design.
 				</p>
-				<p class="project__text">
-					Designed as I coded the game. Big mistake.
-				</p>
-				<a href="#">Project Link</a>
-				<img src="" alt="Project Image">
 			</li>
 			<hr>
 			<li>
-				<h3 class="project__header">Parade</h3>
-				<ul class="project__tech">
-					<li>Sass</li>
-					<li>Node</li>
+				<h3 class="projects__item__header">Parade</h3>
+				<ul class="projects__item__tech">
 					<li>Express</li>
+					<li>Passport</li>
 					<li>Mongo</li>
-					<li>Heroku</li>
+					<li>Sass</li>
+					<li>Google API</li>
 				</ul>
-				<p class="project__text">
-					Create your own holiday lights routes.
+				<figure class="projects__item__images"><img src="" alt="project image"><figcaption>A web app for displaying custom holiday lights routes.</figcaption></figure>
+				<button>Go to project</button>
+				<p class="projects__item__text">
+					I learned about RESTful routing, folder architecture and how to use APIs. Knowing how to structure projects is invaluable.
 				</p>
-				<p class="project__text">
-					Project regrets.
-				</p>
-				<a href="#">Project Link</a>
-				<img src="" alt="Project Image">
 			</li>
 		</ul>
 	</section>
 	<hr>
 	<section id="resume" class="about resume section">
-		<h2>Experience</h2>
+		<!-- <h2>Experience</h2> -->
 		<ul>
 			<li>Contact(Hidden when @media != print)</li>
 			<li>Skills</li>

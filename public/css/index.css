@@ -32,39 +32,10 @@ body {
   list-style-type: none;
 }
 body {
-  color: #162521;
-  font-family: "Dosis", sans-serif;
+  color: #3c474b;
+  font-family: "Roboto", sans-serif;
   font-size: 3rem;
   line-height: 1.7;
-}
-
-.emphasis {
-  color: #18e0d3;
-}
-
-.danger {
-  color: #f42b03;
-}
-
-.header {
-  font-size: 8rem;
-  letter-spacing: 0.75rem;
-}
-.header__secondary {
-  font-size: 5.5rem;
-  letter-spacing: 0.25rem;
-}
-
-.link {
-  color: #18e0d3;
-}
-
-.project__text {
-  font-size: 2rem;
-}
-
-.section__header {
-  font-size: 4rem;
 }
 
 .link {

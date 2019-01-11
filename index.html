@@ -1,8 +1,15 @@
 <!DOCTYPE html>
+
 <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Justin Patten's Portfolio">
+	<meta name="keywords" content="Portfolio, Web Development, Fullstack">
+	<meta name="author" content="Justin Patten">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Justin Patten | Web and Game Development</title>
-	<!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis:200" rel="stylesheet">
-	<link rel="stylesheet" href="public/css/index.css"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Dosis:200" rel="stylesheet"> -->
+	<link rel="stylesheet" href="public/css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto:300" rel="stylesheet">
 </head>
 <body>
 	<header id="header" class="section">
@@ -11,37 +18,7 @@
 	</header>
 	<section id="about" class="section">
 		<!-- <h2 class="section__header">About Me</h2> -->
-		<p class="section__text">For four years I've been using online tutorials to learn how to program. I'm comfortable in vanilla front-end, Bootstrap, Sass, mongo, APIs, and C#. I learn quickly, code cleanly and love to problem solve. When I'm not working as a pharmacy tech, I'm improving my code.</p>
-		<hr>
-		<p class="section__text">
-			Completed online courses:
-			<ol class="to-do">
-				<li class="to-do__item">
-					Colt Steele's <cite>Web Developer Bootcamp</cite> (Udemy)
-					<ul class="to-do__item__tech">
-						<li>Vanilla frontend</li>
-						<li>Node and npm</li>
-						<li>Express</li>
-						<li>Authentication w/Passport</li>
-						<li>Mongo</li>
-						<li>git</li>
-						<li>REST</li>
-					</ul>
-				</li>
-				<li class="to-do__item">
-					<cite>Responsive Web Design Certification</cite> (FreeCodeCamp)
-				</li>
-				<li class="to-do__item">
-					Jonas Schmedtmann's <cite>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</cite> (Udemy)
-					<ul class="to-do__item__tech">
-						<li>Sass</li>
-						<li>BEM</li>
-						<li>CSS architecture</li>
-						<li>Responsive design</li>
-					</ul>
-				</li>
-			</ol>
-		</p>
+		<p class="section__text">For four years I've been using online tutorials to learn how to program. I'm comfortable in vanilla front-end, Bootstrap, Sass, mongo, APIs, and C#. I learn quickly, code cleanly and love to problem solve. When I'm not playing games or watching movies, I'm improving my code.</p>
 	</section>
 	<hr>
 	<section id="projects" class="section">
@@ -78,23 +55,79 @@
 		</ul>
 	</section>
 	<hr>
-	<section id="resume" class="about resume section">
+	<section id="resume" class="section">
 		<!-- <h2>Experience</h2> -->
-		<ul>
-			<li>Contact(Hidden when @media != print)</li>
-			<li>Skills</li>
-			<li>Experience</li>
-			<li>Education</li>
+		<ul class="resume">
+			<li class="resume__item resume__item--contact">
+				<h3 class="resume__item__header">Contact</h3>
+				<ul>
+					<li>GitHub</li>
+					<li>LinkedIn</li>
+					<li>jpatten1980@yahoo.com</li>
+					<li>303.250.6192</li>
+				</ul>
+			</li>
+			<hr>
+			<li class="resume__item resume__item--skills">
+				<h3 class="resume__item__header">Skills</h3>
+				<ul>
+					<li>HTML, CSS, Javascript</li>
+					<li>git</li>
+					<li>Node & Express</li>
+					<li>Mongo</li>
+					<li>REST</li>
+					<li>Sass</li>
+					<li>Bootstrap</li>
+					<li>APIs</li>
+				</ul>
+			</li>
+			<hr>
+			<li class="resume__item resume__item--experience">
+				<h3 class="resume__item__header">Experience</h3>
+			</li>
+			<hr>
+			<li class="resume__item resume__item--education">
+				<h3 class="resume__item__header">Education</h3>
+				<p>
+					Completed online courses:
+					<ol class="courses">
+						<li class="courses__item">
+							Colt Steele's <cite>Web Developer Bootcamp</cite> (Udemy)
+							<ul class="courses__item__tech">
+								<li>Vanilla frontend</li>
+								<li>Node and npm</li>
+								<li>Express</li>
+								<li>Authentication w/Passport</li>
+								<li>Mongo</li>
+								<li>git</li>
+								<li>REST</li>
+							</ul>
+						</li>
+						<li class="courses__item">
+							<cite>Responsive Web Design Certification</cite> (FreeCodeCamp)
+						</li>
+						<li class="courses__item">
+							Jonas Schmedtmann's <cite>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</cite> (Udemy)
+							<ul class="courses__item__tech">
+								<li>Sass</li>
+								<li>BEM</li>
+								<li>CSS architecture</li>
+								<li>Responsive design</li>
+							</ul>
+						</li>
+					</ol>
+				</p>
+			</li>
 		</ul>
 	</section>
 	<hr>
-	<footer class="section">
-		<ul>
-			<li>jpatten1980@yahoo.com</li>
-			<li>303.250.6192</li>
-			<li>LinkedIn</li>
-			<li>YouTube</li>
-		</ul>
+	<footer id="footer" class="section">
+		<address class="footer">
+			<a href="mailto:jpatten1980@yahoo.com" class="footer__item">Email</a>
+			<a href="https://www.linkedin.com/in/justin-patten-57467712a/" class="footer__item" target="_blank">LinkedIn</a>
+			<a href="https://github.com/jpatten1980" class="footer__item" target="_blank">GitHub</a>
+			<a href="https://www.youtube.com/channel/UChwT8vRufu8N9zco7uSSYHw?view_as=subscriber" class="footer__item" target="_blank">YouTube</a>
+		</address>
 	</footer>
 </body>
 </html>

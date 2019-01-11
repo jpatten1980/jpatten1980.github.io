@@ -20,14 +20,6 @@ body {
   padding: 5rem 3rem;
 }
 
-.bg--gold {
-  background-color: #f0b67f;
-}
-
-.bg--gray {
-  background-color: #3c474b;
-}
-
 .project {
   list-style-type: none;
 }
@@ -36,6 +28,31 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
   line-height: 1.7;
+}
+
+.courses__item__tech {
+  font-size: 2rem;
+}
+
+.footer__item {
+  font-size: 2rem;
+}
+
+.header__intro {
+  font-size: 8rem;
+}
+.header__statement {
+  font-size: 5rem;
+}
+
+.projects__item__header {
+  font-size: 5rem;
+}
+.projects__item__tech {
+  font-size: 2rem;
+}
+.resume__item__header {
+  font-size: 5rem;
 }
 
 .link {

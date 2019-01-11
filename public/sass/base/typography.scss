@@ -1,7 +1,54 @@
 body{
-	color: $color-gray;
+	color: $gray;
 	font-family: $font-sans;
-	font-size: 3rem;
+	font-size: $font-normal;
 	line-height: 1.7;
+}
+
+.courses{
+	&__item{
+			&__tech{
+			font-size: $font-small;
+		}
+	}
+}
+
+.footer{
+	&__item{
+		font-size: $font-small;
+	}
+}
+
+.header{
+	&__intro{
+		font-size: $font-largest;
+	}
+	&__statement{
+		font-size: $font-large;
+	}
+}
+
+.projects{
+	&__item{
+		&__header{
+			font-size: $font-large;
+		}
+		&__tech{
+			font-size: $font-small;
+		}
+		&__text{}
+	}
+}
+
+.resume{
+	&__item{
+			&__header{
+			font-size: $font-large;
+		}
+	}
+}
+
+.section{
+	&__text{}
 }
 

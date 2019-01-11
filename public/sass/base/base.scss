@@ -7,11 +7,11 @@
 }
 
 html{
-	font-size: 62.5%;
+	font-size: 62.5%; //10% divided by 16px
 	scroll-behavior: smooth;
 }
 
 body{
-	background-color: $color-white;
+	background-color: $white;
 	box-sizing: border-box;
 }

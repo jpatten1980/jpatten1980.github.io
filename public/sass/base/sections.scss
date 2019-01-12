@@ -1,11 +1,94 @@
-.section{
-	padding: 5rem 3rem;
+body{
+	padding: $normal;
 }
 
-.project{
+ul{
 	list-style-type: none;
+}
 
-	&__tech{
+.section{
+	margin-bottom: $largest;
+	&__header{
+		background-image: linear-gradient(to right, $yellow, $white);
+		margin-left: -$normal;
+		padding-left: $normal;
+	}
+	&__text{
+		margin-top: $normal;
+	}
+}
+.header{
+	padding: $normal;
+}
 
+.projects{
+	
+	&__item{
+		&__tech{
+			background-image: linear-gradient(to right, $gray, $white);
+			border-radius: $large 0 0 $large;
+			margin: -1rem 0 1rem;
+			& > li{
+				display: inline;
+				padding: $small;
+			}
+		}
+		&__image{
+			margin: $normal 0;
+			text-align: center;
+			& > img{
+				border-radius: $small;
+				height: auto;
+				width: 50vw;
+				max-width: 50rem;
+			}
+		}
+		&__button{
+			background-color: $white;
+			border: .25rem solid $blue;
+			border-radius: $large;
+			box-shadow: 0 2rem 5rem rgba($gray,.5);
+			display: block;
+			height: 6.66rem;
+			margin: $largest auto;
+			width: 20rem;
+		}
+		&__text{
+			max-width: 100rem;
+		}
+	}
+}
+
+.resume{
+	
+	&__item{
+		&__header{
+			margin-top: $small;
+		}
+		&__tech{
+			margin-left: $small;
+			& > li:nth-of-type(2n){
+				background-image: linear-gradient(to right, $offwhite, $white);
+				margin-left: -5rem;
+				padding-left: 5rem;
+			}
+		}
+	}
+}
+
+.courses{
+	margin-left: $small;
+	&__item{
+		margin-bottom: $large;
+		&__tech{
+			margin-left: $small;
+		}
+	}
+}
+
+.footer{
+	margin: $smallest $small $normal;
+	&__item{
+		padding: $small;
 	}
 }

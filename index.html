@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Justin Patten's Portfolio">
@@ -12,29 +11,28 @@
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto:300" rel="stylesheet">
 </head>
 <body>
-	<header id="header" class="section">
+	<header class="header section">
 		<section class="header__intro">Hello, my name's <i>Justin Patten</i>.</section>
 		<section class="header__statement">I make games & websites.</section>
 	</header>
-	<section id="about" class="section">
-		<!-- <h2 class="section__header">About Me</h2> -->
+	<section class="about section">
+		<h2 class="section__header">About Me</h2>
 		<p class="section__text">For four years I've been using online tutorials to learn how to program. I'm comfortable in vanilla front-end, Bootstrap, Sass, mongo, APIs, and C#. I learn quickly, code cleanly and love to solve problems. When I'm not playing games or watching movies, I'm improving my code.</p>
 	</section>
-	<hr>
-	<section id="projects" class="section">
-		<!-- <h2 class="section__header">Projects</h2> -->
-		<ul class="projects">
+	<section class="projects section">
+		<h2 class="section__header">Projects</h2>
+		<ul class="projects section__text">
 			<li class="projects__item">
 				<h3 class="projects__item__header">Ping</h3>
 				<ul class="projects__item__tech">
 					<li>Unity3d</li>
 					<li>C#</li>
 				</ul>
-				<figure class="projects__item__images"><img src="" alt="project image"><figcaption>A game about color and popping dots.</figcaption></figure>
-				<button>Go to project</button>
+				<figure class="projects__item__image"><img src="public/img/ping.png" alt="project image"><figcaption>A game about color and popping dots.</figcaption></figure>
 				<p class="projects__item__text">
 					My first big project. I learned component-based development and the DRY method (though, still a little damp in spots).
 				</p>
+				<button class="projects__item__button">See more</button>
 			</li>
 			<hr>
 			<li>
@@ -46,19 +44,18 @@
 					<li>Sass</li>
 					<li>Google API</li>
 				</ul>
-				<figure class="projects__item__images"><img src="" alt="project image"><figcaption>A web app for displaying custom holiday lights routes.</figcaption></figure>
-				<button>Go to project</button>
+				<figure class="projects__item__image"><img src="public/img/ping.png" alt="project image"><figcaption>A web app for displaying custom holiday lights routes.</figcaption></figure>
 				<p class="projects__item__text">
 					I learned about RESTful routing, folder architecture and how to use APIs. Knowing how to structure projects is invaluable.
 				</p>
+				<button class="projects__item__button">See more</button>
 			</li>
 		</ul>
 	</section>
-	<hr>
-	<section id="resume" class="section">
-		<!-- <h2>Experience</h2> -->
+	<section class="resume section">
+		<h2 class="section__header">Experience</h2>
 		<ul class="resume">
-			<li class="resume__item resume__item--contact">
+			<li class="resume__item contact">
 				<h3 class="resume__item__header">Contact</h3>
 				<address class="footer">
 					<a href="mailto:jpatten1980@yahoo.com" class="footer__item">Email</a>
@@ -67,10 +64,9 @@
 					<a href="https://www.youtube.com/channel/UChwT8vRufu8N9zco7uSSYHw?view_as=subscriber" class="footer__item" target="_blank">YouTube</a>
 				</address>
 			</li>
-			<hr>
-			<li class="resume__item resume__item--skills">
+			<li class="resume__item skills">
 				<h3 class="resume__item__header">Skills</h3>
-				<ul>
+				<ul class="resume__item__tech">
 					<li>HTML, CSS, Javascript</li>
 					<li>git</li>
 					<li>Node & Express</li>
@@ -81,48 +77,39 @@
 					<li>APIs</li>
 				</ul>
 			</li>
-			<hr>
-			<li class="resume__item resume__item--experience">
-				<h3 class="resume__item__header">Experience</h3>
-			</li>
-			<hr>
-			<li class="resume__item resume__item--education">
+			<li class="resume__item education">
 				<h3 class="resume__item__header">Education</h3>
-				<p>
-					Completed online courses:
-					<ol class="courses">
-						<li class="courses__item">
-							Colt Steele's <cite>Web Developer Bootcamp</cite> (Udemy)
-							<ul class="courses__item__tech">
-								<li>Vanilla frontend</li>
-								<li>Node and npm</li>
-								<li>Express</li>
-								<li>Authentication w/Passport</li>
-								<li>Mongo</li>
-								<li>git</li>
-								<li>REST</li>
-							</ul>
-						</li>
-						<li class="courses__item">
-							<cite>Responsive Web Design Certification</cite> (FreeCodeCamp)
-						</li>
-						<li class="courses__item">
-							Jonas Schmedtmann's <cite>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</cite> (Udemy)
-							<ul class="courses__item__tech">
-								<li>Sass</li>
-								<li>BEM</li>
-								<li>CSS architecture</li>
-								<li>Responsive design</li>
-							</ul>
-						</li>
-					</ol>
-				</p>
+				<ul class="courses">
+					<li class="courses__item">
+						Colt Steele's <cite>Web Developer Bootcamp</cite> (Udemy)
+						<ul class="courses__item__tech">
+							<li>Vanilla frontend</li>
+							<li>Node and npm</li>
+							<li>Express</li>
+							<li>Authentication w/Passport</li>
+							<li>Mongo</li>
+							<li>git</li>
+							<li>REST</li>
+						</ul>
+					</li>
+					<li class="courses__item">
+						<cite>Responsive Web Design Certification</cite> (FreeCodeCamp)
+					</li>
+					<li class="courses__item">
+						Jonas Schmedtmann's <cite>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</cite> (Udemy)
+						<ul class="courses__item__tech">
+							<li>Sass</li>
+							<li>BEM</li>
+							<li>CSS architecture</li>
+							<li>Responsive design</li>
+						</ul>
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</section>
-	<hr>
-	<footer id="footer" class="section">
-		<address class="footer">
+	<footer class="footer section">
+		<address class="footer center">
 			<a href="mailto:jpatten1980@yahoo.com" class="footer__item">Email</a>
 			<a href="https://www.linkedin.com/in/justin-patten-57467712a/" class="footer__item" target="_blank">LinkedIn</a>
 			<a href="https://github.com/jpatten1980" class="footer__item" target="_blank">GitHub</a>

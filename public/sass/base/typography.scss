@@ -1,40 +1,51 @@
 body{
 	color: $gray;
-	font-family: $font-sans;
-	font-size: $font-normal;
+	font-family: $sans;
+	font-size: $normal;
+	font-weight: normal;
 	line-height: 1.7;
 }
 
-.courses{
-	&__item{
-			&__tech{
-			font-size: $font-small;
-		}
+.section{
+	&__header{
+		font-size: $large;
+		font-weight: inherit;
 	}
-}
-
-.footer{
-	&__item{
-		font-size: $font-small;
+	&__text{
+		text-align: justify;
+		text-justify: inter-word;
 	}
 }
 
 .header{
+	text-align: right;
 	&__intro{
-		font-size: $font-largest;
+		font-size: $largest;
 	}
 	&__statement{
-		font-size: $font-large;
+		font-size: $large;
 	}
 }
 
 .projects{
 	&__item{
 		&__header{
-			font-size: $font-large;
+			font-family: $serif;
+			font-size: $large;
 		}
 		&__tech{
-			font-size: $font-small;
+			color: $white;
+			font-size: $small;
+		}
+		&__image{
+			& > figcaption{
+				font-size: $small;
+			}
+		}
+		&__button{
+			color: $blue;
+			font-size: $small;
+			line-height: $small;
 		}
 		&__text{}
 	}
@@ -42,13 +53,29 @@ body{
 
 .resume{
 	&__item{
-			&__header{
-			font-size: $font-large;
+		&__header{
+			font-family: $serif;
+			font-size: $large;
 		}
 	}
 }
 
-.section{
-	&__text{}
+.courses{
+	&__item{
+		&__tech{
+			font-size: $small;
+		}
+	}
 }
 
+.footer{
+	&__item{
+		color: $blue;
+		font-size: $small;
+		text-decoration: none;
+	}
+}
+
+.center{
+	text-align: center;
+}

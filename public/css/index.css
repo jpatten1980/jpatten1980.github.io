@@ -16,28 +16,112 @@ body {
   box-sizing: border-box;
 }
 
-.section {
-  padding: 5rem 3rem;
+body {
+  padding: 3rem;
 }
 
-.project {
+ul {
   list-style-type: none;
 }
+
+.section {
+  margin-bottom: 8rem;
+}
+.section__header {
+  background-image: linear-gradient(to right, #f0b67f, #fffcf4);
+  margin-left: -3rem;
+  padding-left: 3rem;
+}
+.section__text {
+  margin-top: 3rem;
+}
+
+.header {
+  padding: 3rem;
+}
+
+.projects__item__tech {
+  background-image: linear-gradient(to right, #3c474b, #fffcf4);
+  border-radius: 5rem 0 0 5rem;
+  margin: -1rem 0 1rem;
+}
+.projects__item__tech > li {
+  display: inline;
+  padding: 2rem;
+}
+.projects__item__image {
+  margin: 3rem 0;
+  text-align: center;
+}
+.projects__item__image > img {
+  border-radius: 2rem;
+  height: auto;
+  width: 50vw;
+  max-width: 50rem;
+}
+.projects__item__button {
+  background-color: #fffcf4;
+  border: 0.25rem solid #18e0d3;
+  border-radius: 5rem;
+  box-shadow: 0 2rem 5rem rgba(60, 71, 75, 0.5);
+  display: block;
+  height: 6.66rem;
+  margin: 8rem auto;
+  width: 20rem;
+}
+.projects__item__text {
+  max-width: 100rem;
+}
+
+.resume__item__header {
+  margin-top: 2rem;
+}
+.resume__item__tech {
+  margin-left: 2rem;
+}
+.resume__item__tech > li:nth-of-type(2n) {
+  background-image: linear-gradient(to right, #fff5db, #fffcf4);
+  margin-left: -5rem;
+  padding-left: 5rem;
+}
+
+.courses {
+  margin-left: 2rem;
+}
+.courses__item {
+  margin-bottom: 5rem;
+}
+.courses__item__tech {
+  margin-left: 2rem;
+}
+
+.footer {
+  margin: 0.75rem 2rem 3rem;
+}
+.footer__item {
+  padding: 2rem;
+}
+
 body {
   color: #3c474b;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
+  font-weight: normal;
   line-height: 1.7;
 }
 
-.courses__item__tech {
-  font-size: 2rem;
+.section__header {
+  font-size: 5rem;
+  font-weight: inherit;
+}
+.section__text {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-.footer__item {
-  font-size: 2rem;
+.header {
+  text-align: right;
 }
-
 .header__intro {
   font-size: 8rem;
 }
@@ -46,13 +130,38 @@ body {
 }
 
 .projects__item__header {
+  font-family: "Cormorant Garamond", serif;
   font-size: 5rem;
 }
 .projects__item__tech {
+  color: #fffcf4;
   font-size: 2rem;
 }
+.projects__item__image > figcaption {
+  font-size: 2rem;
+}
+.projects__item__button {
+  color: #18e0d3;
+  font-size: 2rem;
+  line-height: 2rem;
+}
 .resume__item__header {
+  font-family: "Cormorant Garamond", serif;
   font-size: 5rem;
+}
+
+.courses__item__tech {
+  font-size: 2rem;
+}
+
+.footer__item {
+  color: #18e0d3;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
 }
 
 .link {

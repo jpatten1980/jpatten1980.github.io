@@ -7,37 +7,47 @@ ul{
 }
 
 .section{
-	margin-bottom: $largest;
+	margin-bottom: $normal;
 	&__header{
 		background-image: linear-gradient(to right, $yellow, $white);
 		margin-left: -$normal;
-		padding-left: $normal;
+		padding: $normal $normal 0;
 	}
 	&__text{
-		margin-top: $normal;
+		margin: $normal auto;
+		max-width: 70rem;
 	}
 }
+
 .header{
 	padding: $normal;
+	&__intro{
+		&__anim{
+			&--1{
+				margin-left: -$small;
+			}
+			&--4{
+				margin-left: -$small;
+			}
+		}
+	}
 }
 
-.projects{
-	
+.projects{	
 	&__item{
+		margin-top: $normal;
 		&__tech{
 			background-image: linear-gradient(to right, $gray, $white);
-			border-radius: $large 0 0 $large;
-			margin: -1rem 0 1rem;
+			margin: -1.3rem -3rem 0;
+			padding-left: $normal;
 			& > li{
 				display: inline;
 				padding: $small;
 			}
 		}
 		&__image{
-			margin: $normal 0;
-			text-align: center;
+			margin: $large 0;
 			& > img{
-				border-radius: $small;
 				height: auto;
 				width: 50vw;
 				max-width: 50rem;
@@ -46,33 +56,38 @@ ul{
 		&__button{
 			background-color: $white;
 			border: .25rem solid $blue;
-			border-radius: $large;
-			box-shadow: 0 2rem 5rem rgba($gray,.5);
+			box-shadow: 0 .5rem 1rem rgba($gray,.25);
 			display: block;
 			height: 6.66rem;
 			margin: $largest auto;
 			width: 20rem;
 		}
 		&__text{
-			max-width: 100rem;
+			margin: 0 auto;
+			max-width: 70rem;
 		}
 	}
 }
 
 .resume{
-	
 	&__item{
 		&__header{
-			margin-top: $small;
+			margin-top: $large;
 		}
 		&__tech{
 			margin-left: $small;
-			& > li:nth-of-type(2n){
+			& > li:nth-of-type(2n + 1){
 				background-image: linear-gradient(to right, $offwhite, $white);
-				margin-left: -5rem;
-				padding-left: 5rem;
+				margin-left: -$large;
+				padding-left: $large;
 			}
 		}
+	}
+}
+
+.contact{
+	& > h3:nth-of-type(1){
+		margin-top: $normal;
 	}
 }
 
@@ -82,13 +97,18 @@ ul{
 		margin-bottom: $large;
 		&__tech{
 			margin-left: $small;
+			& > li:nth-of-type(2n + 1){
+				background-image: linear-gradient(to right, $offwhite, $white);
+				margin-left: -7rem;
+				padding-left: 7rem;
+			}
 		}
 	}
 }
 
 .footer{
-	margin: $smallest $small $normal;
 	&__item{
 		padding: $small;
+		text-shadow: 0 .125rem .5rem rgba($gray,.25);
 	}
 }

@@ -2,14 +2,20 @@ body{
 	color: $gray;
 	font-family: $sans;
 	font-size: $normal;
-	font-weight: normal;
 	line-height: 1.7;
+}
+
+.name{
+	color: $red;
+	font-family: $serif;
+	font-style: normal;
 }
 
 .section{
 	&__header{
+		color: $white;
 		font-size: $large;
-		font-weight: inherit;
+		line-height: 110%;
 	}
 	&__text{
 		text-align: justify;
@@ -21,6 +27,7 @@ body{
 	text-align: right;
 	&__intro{
 		font-size: $largest;
+		letter-spacing: .1rem;
 	}
 	&__statement{
 		font-size: $large;
@@ -38,7 +45,9 @@ body{
 			font-size: $small;
 		}
 		&__image{
+			text-align: center;
 			& > figcaption{
+				font-family: $serif;
 				font-size: $small;
 			}
 		}
@@ -47,7 +56,10 @@ body{
 			font-size: $small;
 			line-height: $small;
 		}
-		&__text{}
+		&__text{
+			text-align: justify;
+			text-justify: inter-word;
+		}
 	}
 }
 

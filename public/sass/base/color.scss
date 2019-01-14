@@ -1,0 +1,28 @@
+body{
+	background-color: $white;
+}
+
+.section{
+	&__header{
+		background-image: linear-gradient(to right, $yellow 50%, $white);
+	}
+}
+
+.projects{	
+	&__item{
+		&__tech{
+			background-image: linear-gradient(to right, $gray 50%, $white);
+		}
+	}
+}
+
+.resume,
+.courses{
+	&__item{
+		&__tech{
+			& > li:nth-of-type(2n + 1){
+				background-image: linear-gradient(to right, $offwhite 50%, $white);
+			}
+		}
+	}
+}

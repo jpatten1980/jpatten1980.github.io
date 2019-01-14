@@ -11,18 +11,16 @@
 	from {
 		right: -100%;
 	}
+	80%{
+		right: 3%;
+	}
 	to {
-		right: 0;
+		right: 0%;
 	}
 }
 
-@keyframes growUp{
-	from{
-		height: 0;
-	}
-	to{
-		height: 100%;
-	}
+body{
+	overflow-x: hidden;
 }
 
 .header{
@@ -31,43 +29,42 @@
 			&--0{
 				right: -100%;
 				animation-name: moveLeft;
-				animation-duration: 1s;
+				animation-duration: .5s;
 				animation-fill-mode: forwards;
 				position: relative;
 			}
 			&--1{
 				opacity: 0;
 				animation-name: fadeIn;
-				animation-delay: .9s;
-				animation-duration: .5s;
+				animation-delay: .5s;
+				animation-duration: .125s;
 				animation-fill-mode: forwards;
 			}
 			&--2{
-				right: -100%;
-				animation-name: moveLeft;
-				animation-delay: .9s;
-				animation-duration: 1.25s;
+				opacity: 0;
+				animation-name: fadeIn;
+				animation-delay: .75s;
+				animation-duration: .5s;
 				animation-fill-mode: forwards;
-				position: relative;
 			}
 			&--3{
 				opacity: 0;
 				animation-name: fadeIn;
-				animation-delay: 1.75s;
-				animation-duration: 1.25s;
+				animation-delay: 1s;
+				animation-duration: .5s;
 				animation-fill-mode: forwards;
 			}
 			&--4{
 				opacity: 0;
 				animation-name: fadeIn;
-				animation-delay: 2.125s;
-				animation-duration: .5s;
+				animation-delay: 1s;
+				animation-duration: .125s;
 				animation-fill-mode: forwards;
 			}
 			&--5{
 				opacity: 0;
 				animation-name: fadeIn;
-				animation-delay: 3s;
+				animation-delay: 1.5s;
 				animation-duration: 1s;
 				animation-fill-mode: forwards;
 			}
@@ -78,23 +75,7 @@
 .about{
 	opacity: 0;
 	animation-name: fadeIn;
-	animation-delay: 3.5s;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}
-
-.projects{
-	opacity: 0;
-	animation-name: fadeIn;
-	animation-delay: 5s;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}
-
-.resume{
-	opacity: 0;
-	animation-name: fadeIn;
-	animation-delay: 5s;
+	animation-delay: 1.75s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }

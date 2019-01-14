@@ -3,19 +3,26 @@ body{
 	font-family: $sans;
 	font-size: $normal;
 	line-height: 1.7;
+	@include for-phone-only{
+		line-height: 1.2;
+	}
 }
 
 .name{
 	color: $red;
 	font-family: $serif;
 	font-style: normal;
+	font-weight: bold;
 }
 
 .section{
 	&__header{
 		color: $white;
 		font-size: $large;
-		line-height: 110%;
+		line-height: 68%;
+		&__letter--outline{
+			text-shadow: -.25rem -.25rem 0 $yellow;
+		}
 	}
 	&__text{
 		text-align: justify;
@@ -28,9 +35,16 @@ body{
 	&__intro{
 		font-size: $largest;
 		letter-spacing: .1rem;
+		@include for-phone-only{
+			font-size: 7rem;
+			letter-spacing: .05rem;
+		}
 	}
 	&__statement{
 		font-size: $large;
+		@include for-phone-only{
+			font-size: 4rem;
+		}
 	}
 }
 
@@ -85,6 +99,7 @@ body{
 		color: $blue;
 		font-size: $small;
 		text-decoration: none;
+		text-shadow: 0 .125rem .5rem rgba($gray,.25);
 	}
 }
 

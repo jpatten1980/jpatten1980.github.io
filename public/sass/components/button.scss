@@ -1,0 +1,23 @@
+.projects{
+	&__item{
+		&__button{
+			background-color: $white;
+			border: .25rem solid $blue;
+			box-shadow: 0 .5rem 1rem rgba($gray,.25);
+			display: block;
+			height: 6.66rem;
+			margin: $largest auto;
+			transition: .2s;
+			width: 20rem;
+			&:hover{
+				box-shadow: 0 .25rem .5rem rgba($gray,.45);
+				transform: translateY(.1rem);
+			}
+			&:focus{
+				box-shadow: 0 .125rem .25rem rgba($gray,.75);
+				outline: none;
+				transform: translateY(.2rem);
+			}
+		}
+	}
+}

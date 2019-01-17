@@ -1,3 +1,12 @@
+.button{
+	&__text{
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
 .projects{
 	&__item{
 		&__button{
@@ -7,10 +16,15 @@
 			display: block;
 			height: 6.66rem;
 			margin: $largest auto;
+			position: relative;
+			text-align: center;
+			text-decoration: none;
 			transition: .2s;
+			vertical-align: bottom;
 			width: 20rem;
 			&:hover{
 				box-shadow: 0 .25rem .5rem rgba($gray,.45);
+				cursor: pointer;
 				transform: translateY(.1rem);
 			}
 			&:focus{

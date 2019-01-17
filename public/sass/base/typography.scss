@@ -106,3 +106,9 @@ body{
 .center{
 	text-align: center;
 }
+
+.button{
+	&__text{
+		font-weight: bold;
+	}
+}

@@ -101,8 +101,9 @@ ul{
 			margin: $large 0;
 			& > img{
 				height: auto;
+				min-width: 45rem;
 				width: 50vw;
-				max-width: 50rem;
+				max-width: 60rem;
 			}
 			& > figcaption{
 				@include for-phone-only{

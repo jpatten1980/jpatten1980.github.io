@@ -212,8 +212,9 @@ ul {
 }
 .projects__item__image > img {
   height: auto;
+  min-width: 45rem;
   width: 50vw;
-  max-width: 50rem;
+  max-width: 60rem;
 }
 @media (max-width: 599px) {
   .projects__item__image > figcaption {

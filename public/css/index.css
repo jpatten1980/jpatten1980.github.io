@@ -281,7 +281,7 @@ body {
   text-decoration: none;
 }
 
-.links > a:hover {
+.links > a > i:hover {
   transform: translate(0.125rem, 0.125rem);
   transition: 0.5s;
 }

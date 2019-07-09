@@ -18,7 +18,7 @@ body{
 }
 
 .links{
-	& > a:hover{
+	& > a > i:hover{
 		// text-shadow: .125rem .125rem .5rem rgba($gray,.5);
 		transform: translate(.125rem, .125rem);
 		transition: .5s;

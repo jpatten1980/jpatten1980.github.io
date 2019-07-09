@@ -21,8 +21,10 @@ ul{
 	}
 	
 	@include for-phone-only{
+		display: block;
+		float: right;
 		& > a{
-			padding: 1rem;
+			padding: 0;
 		}
 	}
 }
@@ -101,8 +103,8 @@ ul{
 			margin: $large 0;
 			& > img{
 				height: auto;
-				min-width: 45rem;
-				width: 50vw;
+				min-width: 35rem;
+				width: 90vw;
 				max-width: 60rem;
 			}
 			& > figcaption{

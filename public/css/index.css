@@ -133,8 +133,12 @@ ul {
   font-size: 3rem;
 }
 @media (max-width: 599px) {
+  .links {
+    display: block;
+    float: right;
+  }
   .links > a {
-    padding: 1rem;
+    padding: 0;
   }
 }
 
@@ -212,8 +216,8 @@ ul {
 }
 .projects__item__image > img {
   height: auto;
-  min-width: 45rem;
-  width: 50vw;
+  min-width: 35rem;
+  width: 90vw;
   max-width: 60rem;
 }
 @media (max-width: 599px) {

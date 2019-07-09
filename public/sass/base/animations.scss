@@ -9,20 +9,20 @@
 
 @keyframes moveLeft{
 	from {
-		right: -100%;
+		right: 50%;
 	}
-	80%{
-		right: 3%;
+	50% {
+		right: -50%;
 	}
 	to {
 		right: 0%;
 	}
 }
 
-html,
-body{
-	overflow-x: hidden;
-}
+// html,
+// body{
+// 	overflow-x: hidden;
+// }
 
 .header{
 	&__intro{

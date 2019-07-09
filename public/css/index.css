@@ -8,20 +8,15 @@
 }
 @keyframes moveLeft {
   from {
-    right: -100%;
+    right: 50%;
   }
-  80% {
-    right: 3%;
+  50% {
+    right: -50%;
   }
   to {
     right: 0%;
   }
 }
-html,
-body {
-  overflow-x: hidden;
-}
-
 .header__intro__anim--0 {
   right: -100%;
   animation-name: moveLeft;
@@ -91,20 +86,28 @@ body {
 }
 
 body {
-  background-color: #fffcf4;
+  background-color: #f9f9f9;
+}
+
+.name {
+  background-image: linear-gradient(#f9f9f9 75%, rgba(249, 249, 249, 0));
 }
 
 .section__header {
-  background-image: linear-gradient(to right, #efb77f 50%, #fffcf4);
+  background-image: linear-gradient(to right, #efb77f 50%, #f9f9f9);
 }
 
+.projects__item__header {
+  background-image: linear-gradient(#f9f9f9 85%, rgba(249, 249, 249, 0));
+  transform: translateY(-3rem);
+}
 .projects__item__tech {
-  background-image: linear-gradient(to right, #3c474b 50%, #fffcf4);
+  background-image: linear-gradient(to right, #3c474b 50%, #f9f9f9);
 }
 
 .resume__item__tech > li:nth-of-type(2n + 1),
 .courses__item__tech > li:nth-of-type(2n + 1) {
-  background-image: linear-gradient(to right, #fff5db 50%, #fffcf4);
+  background-image: linear-gradient(to right, #fff5db 50%, #f9f9f9);
 }
 
 body {
@@ -118,6 +121,45 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+.name {
+  display: block;
+  height: 10rem;
+  z-index: 1;
+}
+
+.links > a {
+  font-size: 3rem;
+}
+@media (max-width: 599px) {
+  .links > a {
+    padding: 1rem;
+  }
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+}
+.sticky--0 {
+  top: 0rem;
+}
+.sticky--1 {
+  top: 10rem;
+}
+
+.container {
+  margin: 1rem auto;
+  max-width: 63rem;
+}
+
+.spacer {
+  height: 40vh;
+}
+.spacer--right {
+  vertical-align: bottom;
 }
 
 .section {
@@ -152,12 +194,12 @@ ul {
   margin-top: 3rem;
 }
 .projects__item__tech {
-  margin: -1.3rem -3rem 0;
+  margin: 2rem 0;
   padding-left: 3rem;
 }
 @media (max-width: 599px) {
   .projects__item__tech {
-    margin: 0 -3rem 0;
+    margin: 0;
     padding-left: 3rem;
   }
 }
@@ -180,7 +222,7 @@ ul {
   }
 }
 .projects__item__text {
-  margin: 0 auto;
+  margin: 5rem auto;
   max-width: 70rem;
 }
 
@@ -230,14 +272,25 @@ body {
 }
 
 .name {
-  color: #f42b03;
-  font-family: "Cormorant Garamond", serif;
+  color: #ff5656;
+  font-family: "Oswald", serif;
+  font-size: 5rem;
   font-style: normal;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.links > a:hover {
+  transform: translate(0.125rem, 0.125rem);
+  transition: 0.5s;
+}
+
+.spacer--right {
+  text-align: right;
 }
 
 .section__header {
-  color: #fffcf4;
+  color: #f9f9f9;
   font-size: 5rem;
   line-height: 68%;
 }
@@ -247,6 +300,9 @@ body {
 .section__text {
   text-align: justify;
   text-justify: inter-word;
+}
+.section__text--hell {
+  text-decoration: line-through;
 }
 
 .header {
@@ -272,22 +328,22 @@ body {
 }
 
 .projects__item__header {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Oswald", serif;
   font-size: 5rem;
 }
 .projects__item__tech {
-  color: #fffcf4;
+  color: #f9f9f9;
   font-size: 2rem;
 }
 .projects__item__image {
   text-align: center;
 }
 .projects__item__image > figcaption {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Oswald", serif;
   font-size: 2rem;
 }
 .projects__item__button {
-  color: #18e0d3;
+  color: #1699e5;
   font-size: 2rem;
   line-height: 2rem;
 }
@@ -297,7 +353,7 @@ body {
 }
 
 .resume__item__header {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Oswald", serif;
   font-size: 5rem;
 }
 
@@ -306,7 +362,7 @@ body {
 }
 
 .footer__item {
-  color: #18e0d3;
+  color: #1699e5;
   font-size: 2rem;
   text-decoration: none;
   text-shadow: 0 0.125rem 0.5rem rgba(60, 71, 75, 0.25);
@@ -328,8 +384,8 @@ body {
 }
 
 .projects__item__button {
-  background-color: #fffcf4;
-  border: 0.25rem solid #18e0d3;
+  background-color: #f9f9f9;
+  border: 0.25rem solid #1699e5;
   box-shadow: 0 0.5rem 1rem rgba(60, 71, 75, 0.25);
   display: block;
   height: 6.66rem;
@@ -350,6 +406,17 @@ body {
   box-shadow: 0 0.125rem 0.25rem rgba(60, 71, 75, 0.75);
   outline: none;
   transform: translateY(0.2rem);
+}
+
+.links {
+  opacity: 0;
+  transition: 1s;
+}
+
+.modal--open {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=index.css.map */

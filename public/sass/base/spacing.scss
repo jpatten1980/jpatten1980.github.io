@@ -9,6 +9,49 @@ ul{
 	list-style-type: none;
 }
 
+.name{
+	display: block;
+	height: 10rem;
+	z-index: 1;
+}
+
+.links{
+	& > a{
+		font-size: 3rem;
+	}
+	
+	@include for-phone-only{
+		& > a{
+			padding: 1rem;
+		}
+	}
+}
+.sticky{
+	position: -webkit-sticky;
+	position: sticky;
+	width: 100%;
+
+	&--0{
+		top: 0rem;
+	}
+	&--1{
+		top: 10rem;
+	}
+}
+
+.container{
+	margin: 1rem auto;
+	max-width: 63rem;
+
+}
+
+.spacer{
+	height: 40vh;
+	&--right{
+		vertical-align: bottom;
+	}
+}
+
 .section{
 	margin-bottom: 10rem;
 	&__header{
@@ -43,10 +86,10 @@ ul{
 	&__item{
 		margin-top: $normal;
 		&__tech{
-			margin: -1.3rem -3rem 0;
+			margin: 2rem 0;
 			padding-left: $normal;
 			@include for-phone-only{
-				margin: 0 -3rem 0;
+				margin: 0;
 				padding-left: $normal;
 			}
 			& > li{
@@ -69,7 +112,7 @@ ul{
 			}
 		}
 		&__text{
-			margin: 0 auto;
+			margin: 5rem auto;
 			max-width: 70rem;
 		}
 	}

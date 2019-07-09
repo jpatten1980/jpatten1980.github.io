@@ -11,8 +11,23 @@ body{
 .name{
 	color: $red;
 	font-family: $serif;
+	font-size: 5rem;
 	font-style: normal;
 	font-weight: bold;
+	text-decoration: none;
+}
+
+.links{
+	& > a:hover{
+		// text-shadow: .125rem .125rem .5rem rgba($gray,.5);
+		transform: translate(.125rem, .125rem);
+		transition: .5s;
+	}
+}
+.spacer{
+	&--right{
+		text-align: right;
+	}
 }
 
 .section{
@@ -27,6 +42,10 @@ body{
 	&__text{
 		text-align: justify;
 		text-justify: inter-word;
+
+		&--hell{
+			text-decoration: line-through;
+		}
 	}
 }
 

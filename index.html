@@ -6,120 +6,65 @@
 	<meta name="author" content="Justin Patten">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Justin Patten | Web and Game Development</title>
-	<link rel="stylesheet" href="public/css/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto:300" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/11fd6264d8.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300" rel="stylesheet">
+	<link href="public/css/index.css" rel="stylesheet" >
 </head>
 <body>
-	<header class="header section">
-		<section class="header__intro">
-			<span class="header__intro__anim--0">Hello</span>
-			<span class="header__intro__anim--1">,</span>
-			<span class="header__intro__anim--2"> my name's </span>
-			<i class="name header__intro__anim--3">Justin Patten</i>
-			<span class="header__intro__anim--4">.</span>
-		</section>
-		<section class="header__statement header__intro__anim--5">I make websites & games.</section>
-	</header>
-	<section class="about section">
-		<h2 class="section__header">About</h2>
-		<p class="section__text">For four years I've been using online tutorials to learn how to create digital products. I learn quickly, code cleanly and love to solve problems.</p>
-	</section>
-	<section class="projects section">
-		<h2 class="section__header">Pro<span class="section__header__letter--outline">j</span>ects</h2>
+	<div class="container">
+		<div>Hi, I'm</div>
+		<div class="name sticky sticky--0">
+			<span>Justin Patten</span>
+			<span class="links">
+				<a href="mailto:jpatten1980@yahoo.com" class="footer__item fas fa-at"></a>
+				<a href="https://www.linkedin.com/in/justin-patten-57467712a/" class="footer__item fab fa-linkedin" target="_blank"></a>
+				<a href="https://github.com/jpatten1980" class="footer__item fab fa-github" target="_blank"></a>
+			</span>
+		</div>
+		<div class="spacer">
+			<div class="sticky sticky--1">A Web & Game Developer.</div>
+		</div>
+		<div class="spacer">
+			<p class="section__text">For four years, I've used online tutorials to learn how to create digital products. I learn quickly, code cleanly, and love to plink around with problems.</p>
+		</div>
+		<div class="spacer"></div>
+		<div class="spacer">
+			<div class="sticky sticky--1">I've made a couple projects:</div>
+		</div>
 		<ul class="projects">
 			<li class="projects__item">
-				<h3 class="projects__item__header">Ping</h3>
-				<ul class="projects__item__tech">
-					<li>Unity3d</li>
-					<li>C#</li>
-				</ul>
-				<figure class="projects__item__image"><img src="public/img/ping.gif" alt="project image"><figcaption>A game about color and popping dots.</figcaption></figure>
+				<div>
+					<h3 class="projects__item__header sticky sticky--1">Ping</h3>
+					<ul class="projects__item__tech">
+						<li>Unity3d</li>
+						<li>C#</li>
+					</ul>
 				<p class="projects__item__text">
-					My first big project. I learned component-based development and the DRY method (though, still a little damp in spots).
+					My first big project. I learned component-based development and the DRY method (admittedly still a little damp in spots).
 				</p>
+				<figure class="projects__item__image"><img src="public/img/ping.gif" alt="project image"><figcaption>A game about color and popping dots.</figcaption></figure>
+				</div>
 				<a href="#" class="projects__item__button"><p class="button__text">See more</p></a>
 			</li>
 			<li>
-				<h3 class="projects__item__header">Parade</h3>
-				<ul class="projects__item__tech">
-					<li>Express</li>
-					<li>Passport</li>
-					<li>Mongo</li>
-					<li>Sass</li>
-					<li>Google API</li>
-				</ul>
-				<figure class="projects__item__image"><img src="public/img/parade.jpg" alt="project image"><figcaption>A web app for displaying custom holiday lights routes.</figcaption></figure>
+				<div>
+					<h3 class="projects__item__header sticky sticky--1">Parade</h3>
+					<ul class="projects__item__tech">
+						<li>Express</li>
+						<li>Passport</li>
+						<li>Mongo</li>
+						<li>Sass</li>
+						<li>Google API</li>
+					</ul>
+					<figure class="projects__item__image"><img src="public/img/parade.jpg" alt="project image"><figcaption>A web app for displaying custom holiday lights routes.</figcaption></figure>
+				</div>
 				<p class="projects__item__text">
-					I learned about RESTful routing, folder architecture and how to use APIs. Knowing how to structure projects is invaluable.
+					I learned about RESTful routing, folder architecture, and how to use APIs. Knowing how to structure projects is invaluable.
 				</p>
 				<a href="https://intense-plains-10266.herokuapp.com/" target="_blank" class="projects__item__button"><p class="button__text">See more</p></a>
-				
 			</li>
 		</ul>
-	</section>
-	<section class="resume section">
-		<h2 class="section__header">Ex<span class="section__header__letter--outline">p</span>erience</h2>
-		<ul class="resume">
-			<li class="resume__item contact">
-				<h3 class="resume__item__header">Contact</h3>
-				<address class="footer">
-					<a href="mailto:jpatten1980@yahoo.com" class="footer__item">Email</a>
-					<a href="https://www.linkedin.com/in/justin-patten-57467712a/" class="footer__item" target="_blank">LinkedIn</a>
-					<a href="https://github.com/jpatten1980" class="footer__item" target="_blank">GitHub</a>
-					<a href="https://www.youtube.com/channel/UChwT8vRufu8N9zco7uSSYHw?view_as=subscriber" class="footer__item" target="_blank">YouTube</a>
-				</address>
-			</li>
-			<li class="resume__item skills">
-				<h3 class="resume__item__header">Skills</h3>
-				<ul class="resume__item__tech">
-					<li>git</li>
-					<li>Node & Express</li>
-					<li>Mongo</li>
-					<li>REST</li>
-					<li>Sass</li>
-					<li>Bootstrap</li>
-					<li>APIs</li>
-				</ul>
-			</li>
-			<li class="resume__item education">
-				<h3 class="resume__item__header">Education</h3>
-				<ul class="courses">
-					<li class="courses__item">
-						Colt Steele's <cite>Web Developer Bootcamp</cite> (<i class="name">Udemy</i>)
-						<ul class="courses__item__tech">
-							<li>Node and npm</li>
-							<li>Express</li>
-							<li>Authentication w/Passport</li>
-							<li>Mongo</li>
-							<li>git</li>
-							<li>REST</li>
-						</ul>
-					</li>
-					<li class="courses__item">
-						<cite>Responsive Web Design Certification</cite> (<i class="name">FreeCodeCamp</i>)
-					</li>
-					<li class="courses__item">
-						Jonas Schmedtmann's <cite>Advanced CSS and Sass:<br> Flexbox, Grid, Animations and More!</cite> (<i class="name">Udemy</i>)
-						<ul class="courses__item__tech">
-							<li>Sass</li>
-							<li>BEM</li>
-							<li>CSS architecture</li>
-							<li>Responsive design</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</section>
-	<footer class="footer section">
-		<address class="footer center">
-			<a href="mailto:jpatten1980@yahoo.com" class="footer__item">Email</a>
-			<a href="https://www.linkedin.com/in/justin-patten-57467712a/" class="footer__item" target="_blank">LinkedIn</a>
-			<a href="https://github.com/jpatten1980" class="footer__item" target="_blank">GitHub</a>
-			<a href="https://www.youtube.com/channel/UChwT8vRufu8N9zco7uSSYHw?view_as=subscriber" class="footer__item" target="_blank">YouTube</a>
-		</address>
-	</footer>
-
+	</div>
 <script type="text/javascript" src="public/js/index.js"></script>
 </body>
 </html>
